@@ -1,7 +1,7 @@
 %define up_name cgi
 %define name	ocaml-%{up_name}
 %define version	0.8
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -21,6 +21,7 @@ the result being an association list
 %package devel
 Summary:	Development files for %{name}
 Group:		Development/Other
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains the development files needed to build applications

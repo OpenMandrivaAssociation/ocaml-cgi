@@ -1,8 +1,7 @@
 %define up_name cgi
 %define name	ocaml-%{up_name}
 %define version	0.8
-%define release	%mkrel 1
-%define ocaml_sitelib %(if [ -x /usr/bin/ocamlc ]; then ocamlc -where;fi)/site-lib
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -42,9 +41,13 @@ make install TARGETDIR=%{buildroot}/%{ocaml_sitelib}/cgi
 %clean
 rm -rf %{buildroot}
 
-%files devel
+%files
 %defattr(-,root,root)
 %doc CHANGES COPYING LGPL
-%{ocaml_sitelib}/cgi
+%dir %{ocaml_sitelib}/cgi
+%{ocaml_sitelib}/cgi/*.cmi
 
-
+%files devel
+%defattr(-,root,root)
+%{ocaml_sitelib}/cgi/*
+%exclude %{ocaml_sitelib}/cgi/*.cmi

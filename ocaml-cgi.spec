@@ -12,6 +12,7 @@ URL:		http://www.lri.fr/~filliatr/ftp/ocaml/cgi
 License:	GPL
 Group:		Development/Other
 BuildRequires:	ocaml
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This library provides a function to parse the CGI arguments, parse_args,

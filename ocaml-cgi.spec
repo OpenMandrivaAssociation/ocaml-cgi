@@ -1,7 +1,7 @@
 %define up_name cgi
 %define name	ocaml-%{up_name}
 %define version	0.8
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 Name:		%{name}
 Version:	%{version}

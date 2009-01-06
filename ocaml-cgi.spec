@@ -36,8 +36,8 @@ using %{name}.
 
 %install
 rm -rf %{buildroot}
-install -d -m 755 %{buildroot}/%{ocaml_sitelib}/cgi
-make install TARGETDIR=%{buildroot}/%{ocaml_sitelib}/cgi
+install -d -m 755 %{buildroot}/%{_libdir}/ocaml/cgi
+make install TARGETDIR=%{buildroot}/%{_libdir}/ocaml/cgi
 
 %clean
 rm -rf %{buildroot}
@@ -45,10 +45,10 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc CHANGES COPYING LGPL
-%dir %{ocaml_sitelib}/cgi
-%{ocaml_sitelib}/cgi/*.cmi
+%dir %{_libdir}/ocaml/cgi
+%{_libdir}/ocaml/cgi/*.cmi
 
 %files devel
 %defattr(-,root,root)
-%{ocaml_sitelib}/cgi/*
-%exclude %{ocaml_sitelib}/cgi/*.cmi
+%{_libdir}/ocaml/cgi/*
+%exclude %{_libdir}/ocaml/cgi/*.cmi

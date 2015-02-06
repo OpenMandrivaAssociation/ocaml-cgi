@@ -6,7 +6,7 @@
 Summary:	Objective Caml library for writing CGIs
 Name:		ocaml-%{modname}
 Version:	0.8
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.lri.fr/~filliatr/ftp/ocaml/cgi

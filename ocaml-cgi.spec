@@ -9,7 +9,7 @@ Version:	0.8
 Release:	10
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://www.lri.fr/~filliatr/ftp/ocaml/cgi
+Url:		https://www.lri.fr/~filliatr/ftp/ocaml/cgi
 Source0:	http://www.lri.fr/~filliatr/ftp/ocaml/cgi/%{modname}-%{version}.tar.bz2
 BuildRequires:	ocaml
 

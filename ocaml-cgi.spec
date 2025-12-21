@@ -11,6 +11,11 @@ License:	GPLv2+
 Group:		Development/Other
 Url:		https://www.lri.fr/~filliatr/ftp/ocaml/cgi
 Source0:	http://www.lri.fr/~filliatr/ftp/ocaml/cgi/%{modname}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ocaml
 
 %description
